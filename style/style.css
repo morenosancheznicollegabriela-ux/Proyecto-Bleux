@@ -324,3 +324,31 @@ width: 40%;
 .subscribe.pink {
     background-color: #f2188c;
 }
+
+footer {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer{
+    color: #555;
+    font-size: 14px;
+}
+
+.footer span{
+    color: #e83e8c;
+    margin: 0 4px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social a{
+  color: #555555;
+  font-size: 14px;
+}

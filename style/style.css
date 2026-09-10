@@ -36,14 +36,14 @@ body{
     transition: 0.3s;
 }
 .menu .btn-download {
-  background: linear-gradient(90deg, #635bff, #a259ff) !important;
-  color: #ffffff !important;
-  padding: 8px 20px !important;
-  border-radius: 4px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-  line-height: 1.2 !important;
+  background: linear-gradient(90deg, #635bff, #a259ff);
+  color: #ffffff ;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.2 ;
 }
 
 .menu .btn-download:hover {
@@ -82,7 +82,7 @@ body{
 }
 
 .hero1 p {
-    width: 400px;
+    width: 100%;
     font-size: 18px;
     line-height: 1.7;
     color: #eeeeee;
@@ -140,8 +140,8 @@ body{
 .funcionalidades h2 {
     text-align: center;
     color: #df2783;
-    font-size: 39px;
-    margin-bottom: 42px;
+    font-size: 48px;
+    margin-bottom: 50px;
 }
 
 .funcionalidades-contenido {
@@ -207,7 +207,7 @@ width: 40%;
 }
 
 .pricing {
-    width: 100%;
+  width: 100%;
   background-color: #1E172F;
   padding: 45px 0;
   text-align: center;
@@ -220,9 +220,11 @@ width: 40%;
 }
 
 .pricing > p {
+  width: 80%;
+  margin: 0 auto 30px auto;
   color: #d4d1da;
+  text-align: center;
   font-size: 16px;
-  margin-bottom: 30px;
   line-height: 1.5;
 }
 
@@ -231,66 +233,75 @@ width: 40%;
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 25px;
 }
 
 .plan{
-    width: 250px;
+    width: 258px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
-.plan header{
-    height: 75px;
+.plan-header{
+    height: 112px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .plan-header .imagenes {
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .plan-header .imagenes img {
-    width: 45px;
+    width: 100%;
 }
+
 .plan-header h3 {
     color: #2E2550;
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 5px 0 0 0;
 }
 
 .price {
     background-color: #f1f1f1;
-    height: 43px;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
+
 .price strong {
     color: #333;
-    font-size: 21px;
+    font-size: 30px;
     font-weight: normal;
 }
 .price span {
     color: #555;
-    font-size: 11px;
+    font-size: 14px;
+    text-align: left;
 }
 
 
 .plan-list {
     list-style: none;
     text-align: left;
-    padding: 12px 18px;
+    padding: 18px 26px 5px 26px;
+    margin: 0;
 }
+
 .plan-list li {
     color: #555;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 7px;
 }
 .plan-list li i {
     color: #2E2550;
@@ -304,23 +315,31 @@ width: 40%;
 
 .plan-description {
     color: #555;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    padding: 0 20px;
-    margin-bottom: 15px;
+    padding: 0 25px;
+    margin-bottom:25px 0 15px 0;
+}
+
+.plan-footer {
+    background-color: #f1f1f1;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
 
 .subscribe {
-    display: inline-block;
     background-color: #2E2550;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    padding: 7px 15px;
-    border-radius: 2px;
-    margin-bottom: 8px;
+    font-size: 14px;
+    padding: 11px 18px;
+    border-radius: 3px;
 }
+
 .subscribe.pink {
     background-color: #f2188c;
 }
@@ -345,212 +364,280 @@ footer {
 
 .social {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .social a{
   color: #555555;
-  font-size: 14px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 100%;
-    padding: 0 25px;
-  }
+@media(max-width:1279px){
 
-  .grid-2 {
-    gap: 20px;
-  }
+    .menu{
+        gap: 20px;
+        padding: 20px;
+    }
 
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
+    .hero1{
+        padding-left: 8%;
+    }
 
-  .hero-content p {
-    font-size: 0.9rem;
-    max-width: 100%;
-  }
+    .hero2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 
-  .pricing-grid {
-    gap: 15px;
-  }
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone img{
+        width: 200px;
+        height: auto;
+    }
+
+    .contenido-funcionalidades{
+        width: 90%;
+    }
+
+    .pricing > p{
+        padding: 30px;
+    }
+
+    .plans{
+        width: 100%;
+        gap: 15px;
+    }
+
+}
+@media(max-width:920px){
+
+    .menu{
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero1{
+        padding-left: 7%;
+        padding-top: 90px;
+    }
+
+    .hero1 h1{
+        font-size: 55px;
+    }
+
+    .hero1 p{
+        font-size: 17px;
+    }
+
+    .hero2{
+        padding-left: 50px;
+    }
+
+    .phone img{
+        width: 170px;
+    }
+
+    .contenido-funcionalidades{
+        width: 90%;
+        gap: 20px;
+    }
+
+    .laptop-container img{
+        width: 330px;
+    }
+
+    .text{
+        width: 45%;
+    }
+
+    .plans{
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .plan{
+        width: 30%;
+    }
+}
+@media(max-width:768px){
+
+    .menu{
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+
+    .hero{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .hero1,
+    .hero2{
+        width: 100%;
+        height: 450px;
+    }
+
+    .hero1 h1{
+        font-size: 55px;
+    }
+
+
+    .hero2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .phone img{
+        width: 190px;
+    }
+
+    .funcionalidades-contenido{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .laptop-container,
+    .text{
+        width: 100%;
+    }
+
+    .laptop-container img{
+        width: 300px;
+        max-width: 100%;
+    }
+
+
+    .pricing{
+        flex-direction: column;
+    }
+
+    .pricing h2{
+        font-size: 40px;
+    }
+
+    .pricing > p{
+        padding: 0 20px;
+    }
+
+    .plans{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .plan{
+        width: 50%;
+    }
+
+
 }
 
-@media (min-width: 769px) and (max-width: 920px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+@media(max-width:480px){
 
-  .grid-2 {
-    gap: 20px;
-  }
+    .menu{
+        gap: 20px;
+        padding: 20px;
+    }
 
-  .hero-content h1 {
-    font-size: 2.1rem;
-  }
+    .menu img{
+        width: 100px;
+    }
 
-  .hero-content p {
-    font-size: 0.85rem;
-  }
+    .menu ul{
+        gap: 12px;
+    }
 
-  .phone-mockup {
-    width: 140px;
-    height: 260px;
-  }
+    .menu a{
+        font-size: 14px;
+    }
 
-  .nav-links {
-    gap: 12px;
-    font-size: 0.8rem;
-  }
+    .menu button{
+        padding: 5px 8px;
+    }
 
-  .btn-primary {
-    padding: 6px 12px;
-  }
-}
+    .hero1{
+        height: 430px;
+        padding: 60px 25px;
+    }
 
-@media (max-width: 1024px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
+    .hero1 h1{
+        font-size: 45px;
+    }
 
-  .nav-links {
-    gap: 12px;
-    font-size: 0.8rem;
-  }
+    .hero1 p{
+        font-size: 15px;
+    }
 
-  .btn-primary {
-    padding: 6px 14px;
-  }
-}
+    .hero2{
+        height: 400px;
+    }
 
-@media (max-width: 920px) {
-  .hero-content h1 {
-    font-size: 1.9rem;
-  }
+    .phone img{
+        width: 170px;
+    }
 
-  .hero-content p {
-    font-size: 0.85rem;
-    max-width: 100%;
-  }
+    .funcionalidades{
+        padding: 30px 0;
+    }
 
-  .grid-2 {
-    gap: 15px;
-  }
+    .funcionalidades h2{
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
 
-  .phone-mockup {
-    width: 140px;
-    height: 260px;
-  }
+    .laptop-container img{
+        width: 300px;
+    }
 
-  .pricing-grid {
-    gap: 15px;
-  }
-}
+    .text h3{
+        font-size: 30px;
+    }
 
-@media (max-width: 768px) {
-  @media screen and (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    padding: 15px 10px;
-    gap: 15px;
-  }
+    .text p{
+        font-size: 15px;
+    }
 
-  .menu ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
+    .pricing{
+        padding: 35px 0;
+    }
 
- 
-  .hero {
-    flex-direction: column;
-    height: auto; 
-  }
+    .pricing h2{
+        font-size: 35px;
+    }
 
-  .hero1, .hero2 {
-    width: 100% !important;
-    height: auto !important;
-     padding: 30px 20px !important;
-    text-align: center;
-  }
+    .pricing > p{
+        font-size: 14px;
+    }
 
-  .hero1 h1 {
-    font-size: 2.5rem;
-  }
+    .plans{
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .hero1 p {
-    width: 100%;
-    margin: 0 auto 20px auto;
-  }
+    .plan{
+        width: 280px;
+        max-width: 90%;
+    }
 
-  .botones {
-    margin: 0 auto;
-    justify-content: center;
-  }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .hero2 {
-    display: flex;
-    justify-content: center;
-  }
-
-  .funcionalidades-contenido {
-    flex-direction: column;
-    width: 90%;
-    gap: 25px;
-  }
-
-  .laptop-container, .text {
-    width: 100%;
-  }
-
-  .laptop-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .text {
-    text-align: center;
-  }
-
-  .text ul li {
-    justify-content: center;
-  }
-
-  .plans {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .plan {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  footer {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    gap: 15px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
+    .copyright{
+        font-size: 13px;
+    }
 }

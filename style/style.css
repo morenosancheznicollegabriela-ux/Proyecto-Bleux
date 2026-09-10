@@ -151,3 +151,57 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+
+.laptop-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.laptop-container img {
+    width: 400px;
+}
+
+.text{
+width: 40%;
+}
+
+.text h3{
+    color: #d64b91;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.text p{
+    color: #555;
+    font-size: 16px;
+    line-height:1.5;
+    margin-bottom: 10px;
+}
+
+.text h4{
+    color: #f2188c;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.text li {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.text li i {
+    color: #f2188c;
+    margin-right: 7px;
+    font-size: 14px;
+}

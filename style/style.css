@@ -352,3 +352,205 @@ footer {
   color: #555555;
   font-size: 14px;
 }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .grid-2 {
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .pricing-grid {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .grid-2 {
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .phone-mockup {
+    width: 140px;
+    height: 260px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+
+  .grid-2 {
+    gap: 15px;
+  }
+
+  .phone-mockup {
+    width: 140px;
+    height: 260px;
+  }
+
+  .pricing-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+ 
+  .hero {
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .hero1, .hero2 {
+    width: 100% !important;
+    height: auto !important;
+     padding: 30px 20px !important;
+    text-align: center;
+  }
+
+  .hero1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero1 p {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .botones {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .hero2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .funcionalidades-contenido {
+    flex-direction: column;
+    width: 90%;
+    gap: 25px;
+  }
+
+  .laptop-container, .text {
+    width: 100%;
+  }
+
+  .laptop-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text ul li {
+    justify-content: center;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .plan {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
